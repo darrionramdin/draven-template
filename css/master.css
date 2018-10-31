@@ -1,0 +1,90 @@
+/*------------------------------------------------------------------
+  [x. Jumbotron / .jumbotron]
+------------------------------------------------------------------*/
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0px;
+  background-size: cover;
+}
+
+.jumbotron-content {
+  position: relative;
+  z-index: 2;
+}
+
+.jumbotron-title {
+  font-size: 56px;
+}
+
+/*------------------------------------------------------------------
+  [x. Particles JS / #particles-js]
+------------------------------------------------------------------*/
+
+#particles-js canvas {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+/*------------------------------------------------------------------
+  [x. Button / .btn]
+------------------------------------------------------------------*/
+
+.btn {
+  padding: 8px 25px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.btn.btn-outline {
+  background: transparent;
+}
+
+.btn.btn-light.btn-outline:hover {
+  background: white;
+  color: black;
+}
+
+.btn-outline.btn-light {
+  color: white;
+}
+
+/*------------------------------------------------------------------
+  [x. Navbar / .navbar]
+------------------------------------------------------------------*/
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  color: white;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-item:last-child {
+
+}
+
+.navbar-nav.social-media-nav .nav-item {
+  margin-right: 0rem;
+}
+
+.navbar-collapse.collapse.show {
+  text-align: center;
+}
+
+.navbar-collapse.collapsing {
+  text-align: center;
+}
+
+/*------------------------------------------------------------------
+  [x. Jumbotron / .jumbotron]
+------------------------------------------------------------------*/
