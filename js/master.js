@@ -1,15 +1,32 @@
 $(function() {
+  // data-image functionality
   const imageElements = $('[data-image]');
     for(let element of imageElements) {
         $(element).css("background-image",`url(${$(element).data('image')})`);
-    }
+    };
 
+    // Navbar Toggle
     $('.navbar-toggler').on('click', function() {
       if(!$('.navbar').hasClass('.navbar-scrolled')) {
         $('.navbar').toggleClass('bg-dark');
       }
-    })
+    });
 
+    // Navbar Scroll
+    $(document).scroll(function() {
+         $('.navbar').toggleClass('bg-dark', $(this).scrollTop() > $('.navbar').height());
+    });
+
+    // Rellax
+    if($('.rellax').length) {
+      const rellax = new Rellax('.rellax');
+    }
+
+    // AOS
+    AOS.init();
+
+
+    // Particles JS
     if($('.particles').length) {
       particlesJS('particles-js',
       {

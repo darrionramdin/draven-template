@@ -1,4 +1,89 @@
 /*------------------------------------------------------------------
+  [x. Colors / .text-*]
+  flatuicolors.com/palette/defo
+------------------------------------------------------------------*/
+
+.text-turquoise {
+  color: #1abc9c;
+}
+
+.text-green-sea {
+  color: #16a085;
+}
+
+.text-sun-flower {
+  color: #f1c40f;
+}
+
+.text-orange {
+  color: #f39c12;
+}
+
+.text-emerald {
+  color: #2ecc71;
+}
+
+.text-nephritis {
+  color: #27ae60;
+}
+
+.text-carrot {
+  color: #e67e22;
+}
+
+.text-pumpkin {
+  color: #d35400;
+}
+
+.text-peter-river {
+  color: #3498db;
+}
+
+.text-belize-hole {
+  color: #2980b9;
+}
+
+.text-alizarin {
+  color: #e74c3c;
+}
+
+.text-pomergranate {
+  color: #c0392b;
+}
+
+.text-amethyst {
+  color: #9b59b6;
+}
+
+.text-wisteria {
+  color: #8e44ad;
+}
+
+.text-clouds {
+  color: #ecf0f1;
+}
+
+.text-silver {
+  color: #bdc3c7;
+}
+
+.text-wet-asphalt {
+  color: #34495e;
+}
+
+.text-midnight-blue {
+  color: #95a5a6;
+}
+
+.text-concrete {
+  color: #95a5a6;
+}
+
+.text-asbestos {
+  color: #7f8c8d;
+}
+
+/*------------------------------------------------------------------
   [x. Jumbotron / .jumbotron]
 ------------------------------------------------------------------*/
 
@@ -8,6 +93,7 @@
   height: 100vh;
   margin: 0px;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .jumbotron-content {
@@ -86,5 +172,74 @@
 }
 
 /*------------------------------------------------------------------
-  [x. Jumbotron / .jumbotron]
+  [x. Section / .section]
+------------------------------------------------------------------*/
+
+.section {
+  padding: 8rem 0;
+}
+
+.section-header {
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title {
+  padding-bottom: 1rem;
+  font-weight: lighter;
+}
+
+.section-subtitle {
+  opacity: 0.6;
+}
+
+/*------------------------------------------------------------------
+  [x. Service Box / .service-box]
+------------------------------------------------------------------*/
+
+.service-box {
+  height: 300px;
+  padding: 3rem;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+.service-box-icon {
+  font-size: 2rem;
+}
+
+.service-box-title {
+  padding: 1.2rem 0;
+  color: #2c3e50;
+}
+
+.service-box-text {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.service-box.pop-in {
+  transform: scale(0);
+}
+
+/*------------------------------------------------------------------
+  [x. About Image / .about-img]
+------------------------------------------------------------------*/
+
+.about-img {
+  width: 100%;
+  min-height: 426px;
+  background-size: cover;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+/*------------------------------------------------------------------
+  [x. Video CTA  / .video-cta]
 ------------------------------------------------------------------*/
