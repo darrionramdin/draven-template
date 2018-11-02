@@ -1,4 +1,5 @@
 $(function() {
+  "use strict";
   // data-image functionality
   const imageElements = $('[data-image]');
     for(let element of imageElements) {
@@ -7,7 +8,7 @@ $(function() {
 
     // Navbar Toggle
     $('.navbar-toggler').on('click', function() {
-      if(!$('.navbar').hasClass('.navbar-scrolled')) {
+      if(!$('.navbar').hasClass('bg-dark')) {
         $('.navbar').toggleClass('bg-dark');
       }
     });
