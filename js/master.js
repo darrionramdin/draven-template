@@ -18,6 +18,16 @@ $(function() {
          $('.navbar').toggleClass('bg-dark', $(this).scrollTop() > $('.navbar').height());
     });
 
+    // Smooth Scroll
+    $('.navbar .nav-link').on("click", function (e) {
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top - 50
+        }, 1000);
+        e.preventDefault();
+        // $('.navbar-collapse').toggleClass('show');
+    });
+
     // Rellax
     if($('.rellax').length) {
       const rellax = new Rellax('.rellax');
@@ -25,6 +35,13 @@ $(function() {
 
     // AOS
     AOS.init();
+
+    // Filterizr
+    const filterizd = $('.filtr-container').filterizr();
+    $('.portfolio-filters li').on('click', function() {
+      $('.portfolio-filters li').removeClass('active');
+      $(this).addClass('active');
+    })
 
 
     // Particles JS

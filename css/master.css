@@ -260,3 +260,131 @@
 .video-cta-icon {
   font-size: 2.2rem;
 }
+
+/*------------------------------------------------------------------
+  [x. Portfolio Carousel / #portfolioCarousel]
+------------------------------------------------------------------*/
+
+#portfolioCarousel {
+  position: relative;
+  height: 700px;
+}
+
+#portfolioCarousel .carousel-inner {
+
+}
+
+#portfolioCarousel .carousel-controls {
+  padding: 2rem 1rem;
+}
+
+#portfolioCarousel .carousel-controls a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #34495e;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#portfolioCarousel .carousel-controls a:hover {
+  opacity: 1;
+}
+
+#portfolioCarousel .carousel-controls a:last-child {
+  margin-right: 0rem;
+}
+
+/*------------------------------------------------------------------
+  [x. Portfolio Item / .portfolio-item]
+------------------------------------------------------------------*/
+
+.portfolio-item {
+  height: 350px;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  transform-style: preserve-3d
+}
+
+.portfolio-item:hover {
+  text-decoration: none;
+}
+
+.portfolio-item-info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(44, 62, 80, 0.5),rgba(44, 62, 80, 0.5));
+  transition: all 0.3s ease-in-out;
+  transform: translateZ(20px);
+}
+
+.portfolio-item-info p {
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.portfolio-item:hover .portfolio-item-info {
+  opacity: 1;
+}
+
+/*------------------------------------------------------------------
+  [x. Portfolio Filers / .portfolio-filters]
+------------------------------------------------------------------*/
+.portfolio-filters li.active {
+  opacity: 1;
+}
+
+.portfolio-filters li {
+  cursor: pointer;
+  opacity: 0.7;
+  padding: 1rem 1rem;
+  font-size: 14px;
+}
+
+.portfolio-filters li:first-child {
+  padding-left: 0;
+}
+
+/*------------------------------------------------------------------
+  [x. Testimonial / .testimonial]
+------------------------------------------------------------------*/
+.testimonial {
+  text-align: center;
+  min-height: 400px;
+}
+
+.testimonial-image {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+.testimonial-name {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: lighter;
+}
+
+.testimonial-position {
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: white;
+  opacity: 0.7;
+}
+
+.testimonial-quote {
+  padding-top: 3rem;
+  color: white;
+}
