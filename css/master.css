@@ -388,3 +388,84 @@
   padding-top: 3rem;
   color: white;
 }
+
+/*------------------------------------------------------------------
+  [x. Blog Card / .blog-card]
+------------------------------------------------------------------*/
+
+.blog-card {
+  min-height: 400px;
+  width: 100%;
+  background: white;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-card:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-card:hover .blog-card-image {
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+.blog-card-image {
+  height: 250px;
+  background-size: cover;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-card-info {
+  padding: 2rem 0;
+}
+
+.blog-card-title {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.blog-card-tag {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+/*------------------------------------------------------------------
+  [x. Form / .form-control]
+------------------------------------------------------------------*/
+
+.form-control {
+  margin-bottom: 1rem;
+  border-radius: 0px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border: 1px solid #2c3e50;
+  box-shadow: none;
+  outline: 0;
+}
+
+/*------------------------------------------------------------------
+  [x. Footer / .footer]
+------------------------------------------------------------------*/
+
+.footer {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer .nav .nav-item .nav-link {
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .nav .nav-item .nav-link:hover {
+  opacity: 0.7;
+}
